@@ -1,97 +1,101 @@
- <!DOCTYPE html>
-    <html lang="pt-BR">
-        <head>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Encontre seu Instrutor</title>
-            <link rel="stylesheet" href="index.css" />
-        </head>
-        <body>
-            <header class="navbar">
-                <div class="logo">Driver Autônomo</div>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#como-funciona">Como funciona</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </nav>
-            </header>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-            <main>
-                <!-- Seção Hero / Início -->
-                <section id="inicio" class="hero">
-                    <div class="hero-content">
-                        <h1>Encontre professores de trânsito perto de você</h1>
-                        <p>
-                            Conecte-se com instrutores de direção confiáveis e comece suas aulas
-                            do jeito certo.
-                        </p>
-                        <form id="busca-form" class="search-box">
-                            <input
-                                type="text"
-                                id="cidade"
-                                placeholder="Digite sua cidade ou bairro"
-                                required
-                            />
-                            <button type="submit">Buscar instrutores</button>
-                        </form>
-                    </div>
-                </section>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encontre seu Instrutor</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
 
-                <!-- Seção Como funciona -->
-                <section id="como-funciona" class="steps">
-                    <h2>Como funciona</h2>
-                    <div class="steps-grid">
-                        <div class="step-card">
-                            <span class="step-number">1</span>
-                            <h3>Busque</h3>
-                            <p>Informe sua região para listar instrutores próximos.</p>
-                        </div>
-                        <div class="step-card">
-                            <span class="step-number">2</span>
-                            <h3>Compare</h3>
-                            <p>Veja avaliações, preços e disponibilidade.</p>
-                        </div>
-                        <div class="step-card">
-                            <span class="step-number">3</span>
-                            <h3>Agende</h3>
-                            <p>Entre em contato e marque sua primeira aula prática.</p>
-                        </div>
-                    </div>
-                </section>
+<body>
+    <header class="navbar">
+        <div class="logo">Driver Autônomo</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#como-funciona">Como funciona</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                <!-- Resultados de instrutores (mock) -->
-                <section id="resultados" class="results hidden">
-                    <h2>Instrutores encontrados</h2>
-                    <div id="lista-instrutores" class="instructors-grid"></div>
-                </section>
+    <main>
+        <!-- Seção Hero / Início -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Encontre professores de trânsito perto de você</h1>
+                <p>
+                    Conecte-se com instrutores de direção confiáveis e comece suas aulas
+                    do jeito certo.
+                </p>
+                <form id="busca-form" class="search-box">
+                    <input type="text" id="cidade" placeholder="Digite sua cidade ou bairro" required />
+                    <button type="submit">Buscar instrutores</button>
+                </form>
+            </div>
+        </section>
 
-                <!-- Seção Contato -->
-                <section id="contato" class="contact">
-                    <h2>Fale com a gente</h2>
-                    <form id="contato-form" class="contact-form">
-                        <div class="form-group">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" rows="4" required></textarea>
-                        </div>
-                        <button type="submit">Enviar mensagem</button>
-                    </form>
-                </section>
-            </main>
+        <!-- Seção Como funciona -->
+        <section id="como-funciona" class="steps">
+            <h2>Como funciona</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <span class="step-number">1</span>
+                    <h3>Busque</h3>
+                    <p>Informe sua região para listar instrutores próximos.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">2</span>
+                    <h3>Compare</h3>
+                    <p>Veja avaliações, preços e disponibilidade.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">3</span>
+                    <h3>Agende</h3>
+                    <p>Entre em contato e marque sua primeira aula prática.</p>
+                </div>
+            </div>
+        </section>
 
-            <footer class="footer">
-                <p>© 2025 DriveMatch - Plataforma de alunos e instrutores de trânsito.</p>
-            </footer>
+        <!-- Resultados de instrutores (mock) -->
+        <section id="resultados" class="results hidden">
+            <h2>Instrutores encontrados</h2>
+            <div id="lista-instrutores" class="instructors-grid"></div>
+        </section>
 
-            <script src="script.js"></script>
-        </body>
-    </html>
+        <!-- Seção Contato -->
+        <section id="contato" class="contact">
+            <h2>Fale com a gente</h2>
+            <form id="contato-form" class="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Driver Autônomo - Plataforma de alunos e instrutores de trânsito.</p>
+        <p>
+            Este trabalho está licenciado sob uma
+            licença <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="license noopener">
+                Creative Commons Atribuição-NãoComercial 4.0 Internacional (CC BY-NC 4.0)
+            </a>.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
