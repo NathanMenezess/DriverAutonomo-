@@ -72,6 +72,33 @@ function renderInstrutores(lista, termo) {
     resultadosSection.scrollIntoView({ behavior: "smooth" });
 }
 
+// Menu hamburger
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const navContainer = document.querySelector('.nav-container');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+});
+
+// Fechar menu ao clicar em link
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+    });
+});
+
+// Fechar menu ao redimensionar para desktop
+window.addEventListener('resize', () => {
+    if (window.innerWidth > "768px") {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+    }
+});
+
+
 contatoForm.addEventListener("submit", (event) => {
     event.preventDefault();
     alert("Mensagem enviada! Em breve entraremos em contato.");
