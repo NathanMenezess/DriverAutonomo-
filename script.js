@@ -6,6 +6,7 @@ const instrutoresFake = [
         categoria: "B",
         experiencia: "5 anos",
         nota: 4.8,
+        valor: 90,
     },
     {
         nome: "Ana Ribeiro",
@@ -13,6 +14,7 @@ const instrutoresFake = [
         categoria: "A e B",
         experiencia: "8 anos",
         nota: 4.9,
+        valor: 50,
     },
     {
         nome: "João Martins",
@@ -20,6 +22,7 @@ const instrutoresFake = [
         categoria: "B",
         experiencia: "3 anos",
         nota: 4.6,
+        valor: 70,
     },
 ];
 
@@ -54,6 +57,8 @@ function renderInstrutores(lista, termo) {
         <h3>${inst.nome}</h3>
         <p class="instructor-meta">${inst.cidade} • Categoria ${inst.categoria}</p>
         <span class="badge">${inst.experiencia} de experiência</span>
+        <br/>
+        <span class="badgeValor">Valor por aula: R$${inst.valor}</span>
         <div class="instructor-actions">
           <span>⭐ ${inst.nota.toFixed(1)}</span>
           <button type="button">Ver contato</button>

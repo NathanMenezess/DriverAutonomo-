@@ -10,6 +10,7 @@
   --danger: #ff5252;
   --radius-md: 8px;
   --shadow-soft: 0 8px 20px rgba(0, 0, 0, 0.35);
+  --green: #4caf50;
 }
 
 /* Reset simples */
@@ -228,6 +229,16 @@ body {
   border-radius: 999px;
   background: rgba(255, 214, 0, 0.15);
   color: var(--yellow);
+  margin-bottom: 8px;
+}
+
+.badgeValor {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(0, 255, 38, 0.199);
+  color: var(--green);
   margin-bottom: 8px;
 }
 
