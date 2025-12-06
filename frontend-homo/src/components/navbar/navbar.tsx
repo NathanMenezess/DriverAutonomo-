@@ -19,6 +19,7 @@ const navItems = [
   { label: "Home", path: "/" },
   { label: "Sobre", path: "/about" },
   { label: "Login", path: "/login" },
+  { label: "Registro", path: "/registro" },
 ];
 
 function Navbar() {

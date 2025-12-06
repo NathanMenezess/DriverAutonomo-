@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { Typography, CircularProgress, Box } from "@mui/material";
+import BotaoBase from "../../components/button/botaoBase";
 
 interface Post {
   id: number;
